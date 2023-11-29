@@ -207,5 +207,5 @@ function showWelcome() {
     else timeChange = "夜深了，早点休息，少熬夜";
 
     //自定义文本需要放的位置
-    document.getElementsByClassName("announcement_content")[0].innerHTML = `欢迎来自<span>${pos}</span>的朋友，${timeChange}<br>你距离綺晴约有<span>${dist}</span>公里，${posdesc}`;
+    document.getElementById("welcome-info").innerHTML = `欢迎来自<span>${pos}</span>的朋友，${timeChange}<br>你距离綺晴约有<span>${dist}</span>公里，${posdesc}<br><br>歡迎來到綺晴的混亂空間`;
 }
