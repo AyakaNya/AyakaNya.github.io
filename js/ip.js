@@ -31,11 +31,12 @@ function getDistance(e1, n1, e2, n2) {
     return Math.round(r);
 }
 
+
 //根据自己的需求定制
 function showWelcome() {
     if (!document.getElementById("welcome-info")) return
 
-    let dist = getDistance(120.57186, 31.29579, ipLoacation.result.location.lng, ipLoacation.result.location.lat); //这里记录你自己的经纬度
+    let dist = getDistance(118.2654, 24.3955, ipLoacation.result.location.lng, ipLoacation.result.location.lat); //这里记录你自己的经纬度
 
     let pos = ipLoacation.result.ad_info.nation;
     let posdesc;
@@ -43,13 +44,13 @@ function showWelcome() {
     //海外地区不支持省份及城市信息
     switch (ipLoacation.result.ad_info.nation) {
         case "日本":
-            posdesc = "故鄉的撒庫拉開了...";
+            posdesc = "故鄉的櫻花又開了...";
             break;
         case "美国":
             posdesc = "Make America Great Again!";
             break;
         case "英国":
-            posdesc = "The Only King Is A Burger King!";
+            posdesc = "THE ONLY KING IS A BURGER KING!";
             break;
         case "俄罗斯":
             posdesc = "干了这瓶伏特加！";
@@ -64,31 +65,31 @@ function showWelcome() {
             posdesc = "一起去大堡礁吧！";
             break;
         case "加拿大":
-            posdesc = "拾起一片楓葉贈與你";
+            posdesc = "拾起一片枫叶赠予你";
             break;
         case "中国":
             pos = ipLoacation.result.ad_info.province + " " + ipLoacation.result.ad_info.city;
             switch (ipLoacation.result.ad_info.province) {
                 case "北京市":
                     pos = "北京市";
-                    posdesc = "北京歡迎您～";
+                    posdesc = "北——京——欢迎你~~~";
                     break;
                 case "天津市":
                     pos = "天津市";
-                    posdesc = "結界，講段相聲吧。";
+                    posdesc = "結界，讲段相声吧。";
                     break;
                 case "重庆市":
                     pos = "重庆市";
-                    posdesc = "跟著導航走癮麼還能走錯呢。"
+                    posdesc = "高德地图:已到达重庆，下面交给百度地图导航。"
                     break;
                 case "河北省":
-                    posdesc = "我到河北省來";
+                    posdesc = "山势巍巍成壁垒，天下雄关。铁马金戈由此向，无限江山。";
                     break;
                 case "山西省":
-                    posdesc = "展開坐具長三尺，已佔山河五百餘。";
+                    posdesc = "展开坐具长三尺，已占山河五百余。";
                     break;
                 case "内蒙古自治区":
-                    posdesc = "天蒼蒼，野茫茫，風吹草低現牛羊";
+                    posdesc = "天苍苍，野茫茫，风吹草低见牛羊。";
                     break;
                 case "辽宁省":
                     posdesc = "我想吃烤鸡架！";
@@ -111,9 +112,6 @@ function showWelcome() {
                         case "苏州市":
                             posdesc = "上有天堂，下有苏杭。";
                             break;
-                        case "泰州市":
-                            posdesc = "这里也是我的故乡。";
-                            break;
                         default:
                             posdesc = "散装是必须要散装的。";
                             break;
@@ -126,7 +124,7 @@ function showWelcome() {
                     posdesc = "蚌埠住了，芜湖起飞。";
                     break;
                 case "福建省":
-                    posdesc = "井邑白云间，岩城远带山。";
+                    posdesc = "水啦！是家己郎啦！";
                     break;
                 case "江西省":
                     posdesc = "落霞与孤鹜齐飞，秋水共长天一色。";
@@ -176,8 +174,8 @@ function showWelcome() {
                 case "新疆维吾尔自治区":
                     posdesc = "驼铃古道丝绸路，胡马犹闻唐汉风。";
                     break;
-                case "台湾":
-                    posdesc = "好勢好勢";
+                case "台湾省":
+                    posdesc = "我要QQㄋㄟㄋㄟ好喝到咩噗茶。";
                     break;
                 case "香港特别行政区":
                     pos = "香港特别行政区";
@@ -188,7 +186,7 @@ function showWelcome() {
                     posdesc = "性感荷官，在线发牌。";
                     break;
                 default:
-                    posdesc = "早上好中國，現在我有Bing Chiling。";
+                    posdesc = "早上好中國，現在我有Bing Chiling!";
                     break;
             }
             break;
@@ -209,5 +207,5 @@ function showWelcome() {
     else timeChange = "夜深了，早点休息，少熬夜";
 
     //自定义文本需要放的位置
-    document.getElementById("welcome-info").innerHTML = `欢迎来自<span>${pos}</span>的小伙伴，${timeChange}<br>你距离ichika约有<span>${dist}</span>公里，${posdesc}`;
+    document.getElementsByClassName("announcement_content")[0].innerHTML = `欢迎来自<span>${pos}</span>的朋友，${timeChange}<br>你距离綺晴约有<span>${dist}</span>公里，${posdesc}`;
 }
