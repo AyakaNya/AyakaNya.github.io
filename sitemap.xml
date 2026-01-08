@@ -4,7 +4,16 @@
   <url>
     <loc>https://blog.ayakanya.moe/posts/7ce5e653/</loc>
     
-    <lastmod>2024-11-11</lastmod>
+    <lastmod>2026-01-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.ayakanya.moe/posts/66c5ff49/</loc>
+    
+    <lastmod>2026-01-08</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -14,15 +23,6 @@
     <loc>https://blog.ayakanya.moe/Alist/index.html</loc>
     
     <lastmod>2024-03-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.ayakanya.moe/posts/66c5ff49/</loc>
-    
-    <lastmod>2024-03-08</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
