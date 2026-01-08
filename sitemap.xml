@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.ayakanya.moe/posts/c509386/</loc>
+    
+    <lastmod>2026-01-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.ayakanya.moe/posts/7ce5e653/</loc>
     
     <lastmod>2024-11-11</lastmod>
@@ -125,6 +134,13 @@
   </url>
   
   <url>
+    <loc>https://blog.ayakanya.moe/tags/Love/</loc>
+    <lastmod>2026-01-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.ayakanya.moe/tags/cos/</loc>
     <lastmod>2026-01-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -142,6 +158,13 @@
   
   <url>
     <loc>https://blog.ayakanya.moe/categories/%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2026-01-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.ayakanya.moe/categories/%E6%88%80%E6%84%9B%EF%BC%88%EF%BC%9F/</loc>
     <lastmod>2026-01-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
