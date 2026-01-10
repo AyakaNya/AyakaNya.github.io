@@ -99,6 +99,20 @@
   </url>
   
   <url>
+    <loc>https://blog.ayakanya.moe/tags/HomeBrew/</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.ayakanya.moe/tags/%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.ayakanya.moe/tags/Raycast/</loc>
     <lastmod>2026-01-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -120,14 +134,7 @@
   </url>
   
   <url>
-    <loc>https://blog.ayakanya.moe/tags/HomeBrew/</loc>
-    <lastmod>2026-01-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.ayakanya.moe/tags/%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://blog.ayakanya.moe/tags/cos/</loc>
     <lastmod>2026-01-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -140,21 +147,7 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://blog.ayakanya.moe/tags/cos/</loc>
-    <lastmod>2026-01-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
-  
-  <url>
-    <loc>https://blog.ayakanya.moe/categories/%E8%BB%9F%E9%AB%94%E6%8E%A8%E8%96%A6/</loc>
-    <lastmod>2026-01-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
   
   <url>
     <loc>https://blog.ayakanya.moe/categories/%E6%95%99%E7%A8%8B/</loc>
@@ -164,7 +157,7 @@
   </url>
   
   <url>
-    <loc>https://blog.ayakanya.moe/categories/%E6%88%80%E6%84%9B/</loc>
+    <loc>https://blog.ayakanya.moe/categories/%E8%BB%9F%E9%AB%94%E6%8E%A8%E8%96%A6/</loc>
     <lastmod>2026-01-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -172,6 +165,13 @@
   
   <url>
     <loc>https://blog.ayakanya.moe/categories/%E6%97%A5%E5%B8%B8/</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.ayakanya.moe/categories/%E6%88%80%E6%84%9B/</loc>
     <lastmod>2026-01-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

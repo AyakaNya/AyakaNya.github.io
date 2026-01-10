@@ -1,26 +1,50 @@
-#cursor {
-    position: fixed;
-    width: 16px;
-    height: 16px;
-    background: #000;
-    border-radius: 8px;
-    opacity: 0.25;
-    z-index: 10086;
-    pointer-events: none;
-    transition: 0.2s ease-in-out;
-    transition-property: background, opacity, transform;
+/* PC端顯示，手機端隱藏 */
+@media screen and (min-width: 768px) {
+    #cursor {
+        position: fixed;
+        width: 16px;
+        height: 16px;
+        
+        /* 必須維持白色，才能透過差值模式產生反色 */
+        background: #ffffff; 
+        
+        /* 差值模式：實現自動黑白對比 */
+        mix-blend-mode: difference;
+        
+        border-radius: 50%;
+        
+        /* 【關鍵修改】設置為 0.5 讓它變半透明 (範圍 0 ~ 1) */
+        opacity: 0.5;
+        
+        z-index: 10086;
+        pointer-events: none;
+        transition: 0.2s ease-in-out;
+        transition-property: background, opacity, transform;
+        
+        left: -100px;
+        top: -100px;
+        transform: translate(-50%, -50%);
+    }
+
+    #cursor.hidden {
+        opacity: 0;
+    }
+
+    #cursor.hover {
+        /* 懸停時稍微再透明一點，避免擋住文字 */
+        opacity: 0.4;
+        transform: translate(-50%, -50%) scale(2.5);
+    }
+
+    #cursor.active {
+        /* 點擊時變深一點，增加回饋感 */
+        opacity: 0.7;
+        transform: translate(-50%, -50%) scale(0.5);
+    }
 }
 
-#cursor.hidden {
-    opacity: 0;
-}
-
-#cursor.hover {
-    opacity: 0.1;
-    transform: scale(2.5);
-}
-
-#cursor.active {
-    opacity: 0.5;
-    transform: scale(0.5);
+@media screen and (max-width: 767px) {
+    #cursor {
+        display: none;
+    }
 }
